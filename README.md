@@ -1,14 +1,33 @@
-# snapchat-metadata-organizer
-Organize downloaded snapchat images by changing the image's metadata
+# Snapchat Metadata Organizer
 
-With new snapchat updates, there is a limit on memories's storage. When you mass download the images and videos saved on snapchat, they will save under the date it was downloaded. This program allows for the images to be saved onto a camera roll on the correct date that it was taken. That way, all your snapchat images aren't just at the very end of your camera roll.
+Organizes downloaded Snapchat images by correcting their metadata so they appear on the correct date in your camera roll.
 
-To use:
-Download all your memories from snapchat following this snapchat tutorial
-https://help.snapchat.com/hc/en-us/articles/7012305371156-How-do-I-download-my-data-from-Snapchat
-Select the Export your Memories and Export JSON Files option 
+## Why This Exists
 
-Download this Repository
-Extract the zip-file received from snapchat in the same folder
-Run the script:
-python main.py
+Recent Snapchat updates limit Memories storage. When you mass-download your Snapchat Memories, all images and videos are saved with the **download date**, causing them to appear at the end of your camera roll.
+
+This tool fixes that by updating each file’s metadata to match the **original date the photo or video was taken**, keeping your camera roll properly organized.
+
+## What It Does
+
+- Reads Snapchat Memories export data  
+- Extracts the original capture date from Snapchat JSON files  
+- Updates image metadata accordingly  
+- Ensures photos appear in the correct chronological order
+
+## How to Use
+
+1. **Download your Snapchat Memories**
+   - Follow Snapchat’s official guide:  
+     https://help.snapchat.com/hc/en-us/articles/7012305371156-How-do-I-download-my-data-from-Snapchat
+   - Select:
+     - **Export your Memories**
+     - **Export JSON Files**
+
+2. **Set up the project**
+   - Download this repository
+   - Extract the Snapchat ZIP file into the same folder as the project
+
+3. **Run the script**
+   ```bash
+   python main.py
